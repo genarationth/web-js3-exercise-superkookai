@@ -11,15 +11,15 @@ function checkPassed(score){
 function checkLevel(score){
     if(checkPassed(score)){
         if(score > 8 && score < 11){
-            console.log("Excellent");
+            console.log(`Excellent! Your score is ${score}`);
         }else if (score === 11){
-            console.log("Perfect");
+            console.log(`Perfect! Your score is ${score}`);
         }
         else{
-            console.log(`Your score is ${score}`);
+            console.log(`Passed. Your score is ${score}`);
         }
     }else{
-        console.log("You fail!");
+        console.log(`You fail!! Your score is ${score}`);
     }
 
 }
